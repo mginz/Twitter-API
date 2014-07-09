@@ -7,7 +7,7 @@ function piri (){
 
 	var T = new Twit (keys);
 	T.get('search/tweets', { q: '#foundersandcoders since:2014-01-01', count:   100} , function(err, data, response) {
-		console.log(data.statuses[0].entities.media[0].media_url);
+		console.log(data);
 
 	//console.log(data); 
 	        
