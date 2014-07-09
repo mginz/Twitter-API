@@ -6,20 +6,20 @@ var port = 8888
 var piridon = require('./indexsecure.js')
 var michael = fs.readFileSync('htmlnew.html')
 
-var server = http.createServer( function (request, response){
+//var server = http.createServer( function (request, response){
 	//var url_parts = url.parse(request.url, true)
 	//if(url_parts.pathname == '/form'){
 
   //fs.readFile('./htmlnew.html', function(err, picture) {
             
-  response.writeHead(200, {'Content-type': 'JSON'});
-  	
-	response.end(JSON.stringify(piridon()))
+  //response.writeHead(200, {'Content-type': 'JSON'});
+  	//response.write()
+	//response.end(JSON.stringify(piridon()))
 
   //response.write(data, utf8);
-  //response.end(michael);
-//piridon()
-});
+//  response.end(piridon);
+piridon()
+//});
 //})
 
-server.listen(port);
+//server.listen(port);
